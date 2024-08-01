@@ -4,7 +4,7 @@ while True:
     user_action = input(user_prompt)
     user_action = user_action.strip()
 
-    if "add" in user_action:
+    if "add" in user_action or "new" in user_action:
         todo = user_action[4:]
         with open('todos.txt', 'r') as file:
             todos = file.readlines()
